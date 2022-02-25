@@ -63,7 +63,7 @@ namespace SimplePaint
 				{ToolType.Pipette, new Pipette()},
 				{ToolType.Line, new Line()},
 				{ToolType.Rectangle, new MyRectangle()},
-				// ...
+				//...
 			};
 			_currentToolType = ToolType.Pencil;
 			_currentTool = _tools[_currentToolType];
