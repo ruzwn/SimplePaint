@@ -8,6 +8,7 @@ namespace SimplePaint
 	{
 		Bitmap _image;
 		Dictionary<ToolType, Tool> _tools;
+		bool _isFill;
 
 		public enum ToolType
 		{
@@ -33,6 +34,12 @@ namespace SimplePaint
 				_currentTool = _tools[_currentToolType];
 			}
 		}
+
+		public Bitmap Image
+		{
+			get => _image;
+			set => _image = value;
+		}
 		
 		Tool _currentTool;
 
@@ -41,8 +48,14 @@ namespace SimplePaint
 			get => _image.Size;
 			set
 			{
+				if (value.Width <= 0 || value.Height <= 0)
+					return;
 				var img = new Bitmap(value.Width, value.Height);
 				var imgGr = Graphics.FromImage(img);
+				
+				// gets image with black background when try to save image (if clear button not clicked)
+				imgGr.Clear(Color.White);
+				
 				imgGr.DrawImage(_image, 0, 0);
 				_image = img;
 			}
@@ -52,6 +65,10 @@ namespace SimplePaint
 		{
 			InitializeTools();
 			_image = new Bitmap(size.Width, size.Height);
+			
+			// gets image with black background when try to save image (if clear button not clicked)
+			var imgGr = Graphics.FromImage(_image);
+			imgGr.Clear(Color.White);
 		}
 
 		void InitializeTools()
@@ -69,9 +86,10 @@ namespace SimplePaint
 			_currentTool = _tools[_currentToolType];
 		}
 
-		public void DrawStart(Point position)
+		public void DrawStart(Point position, bool isFill)
 		{
 			_currentTool.StartPoint = position;
+			_isFill = isFill;
 		}
 
 		public Color DrawEnd(Point endPoint)
@@ -90,7 +108,7 @@ namespace SimplePaint
 
 		void Draw(Graphics gr, Point endPoint)
 		{
-			_currentTool.Action(gr, endPoint);
+			_currentTool.Action(gr, endPoint, _isFill);
 		}
 
 		public void Preview(Graphics gr, Point endPoint)

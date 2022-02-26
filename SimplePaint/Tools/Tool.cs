@@ -9,6 +9,6 @@ namespace SimplePaint.Tools
 		public static int PenWidth;
 		public Point StartPoint;
 		
-		public abstract void Action(Graphics gr, Point endPoint);
+		public abstract void Action(Graphics gr, Point endPoint, bool isFill);
 	}
 }

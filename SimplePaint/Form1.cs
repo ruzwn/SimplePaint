@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using SimplePaint.Tools;
 
@@ -10,7 +13,7 @@ namespace SimplePaint
 		{
 			InitializeComponent();
 			Tool.ForeColor = foreColorButton.BackColor;
-			Tool.BackColor = foreColorButton.BackColor;
+			Tool.BackColor = backColorButton.BackColor;
 			Tool.PenWidth = (int) penWidthButton.Value;
 			_painter = new Painter(canvasPanel.ClientSize);
 		}
@@ -117,18 +120,43 @@ namespace SimplePaint
 
 		private void saveAsButton_Click(object sender, EventArgs e)
 		{
-			
+			var image = _painter.Image;
+			var saveFileDialog = new SaveFileDialog();
+			saveFileDialog.Filter = @"PNG (*.png)|*.png|JPEG (*.jpeg)|*.jpeg";
+			var result = saveFileDialog.ShowDialog();
+			if (result == DialogResult.OK)
+			{
+				var fileStream = saveFileDialog.OpenFile();
+				image.Save(fileStream, ImageFormat.Jpeg);
+				fileStream.Close();
+			}
 		}
 
 		private void openButton_Click(object sender, EventArgs e)
 		{
-
+			var openFileDialog = new OpenFileDialog();
+			var result = openFileDialog.ShowDialog();
+			if (result == DialogResult.OK)
+			{
+				var fileName = openFileDialog.FileName;
+				_painter.Image = new Bitmap(fileName);
+				_painter.Paint(canvasPanel.CreateGraphics());
+				// ...
+			}
 		}
 
 		private void canvasPanel_MouseDown(object sender, MouseEventArgs e)
 		{
 			_mousePressed = true;
-			_painter.DrawStart(e.Location);
+			switch (e.Button)
+			{
+				case MouseButtons.Left:
+					_painter.DrawStart(e.Location, false);
+					break;
+				case MouseButtons.Right:
+					_painter.DrawStart(e.Location, true);
+					break;
+			}
 		}
 
 		private void canvasPanel_MouseUp(object sender, MouseEventArgs e)
