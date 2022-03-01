@@ -4,7 +4,7 @@ namespace SimplePaint.Tools
 {
 	public class Pipette : Tool
 	{
-		public override void Action(Graphics gr, Point endPoint, bool isFill)
+		public override void Draw(Graphics gr, Point endPoint, bool isFill)
 		{
 		}
 

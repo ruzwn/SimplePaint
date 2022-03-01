@@ -5,7 +5,7 @@ namespace SimplePaint.Tools
 {
 	public class Eraser : Tool
 	{
-		public override void Action(Graphics gr, Point endPoint, bool isFill)
+		public override void Draw(Graphics gr, Point endPoint, bool isFill)
 		{
 			var pen = new Pen(BackColor, PenWidth);
 			pen.StartCap = pen.EndCap = LineCap.Round;

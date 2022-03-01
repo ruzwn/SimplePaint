@@ -52,16 +52,23 @@
         <Compile Include="Form1.Designer.cs">
             <DependentUpon>Form1.cs</DependentUpon>
         </Compile>
+        <Compile Include="Tools\ToolType.cs" />
         <Compile Include="Painter.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Tools\Arrow.cs" />
         <Compile Include="Tools\Eraser.cs" />
         <Compile Include="Tools\Line.cs" />
         <Compile Include="Tools\MyRectangle.cs" />
         <Compile Include="Tools\Oval.cs" />
         <Compile Include="Tools\Pencil.cs" />
         <Compile Include="Tools\Pipette.cs" />
+        <Compile Include="Tools\Text.cs" />
         <Compile Include="Tools\Tool.cs" />
+        <Compile Include="Tools\Triangle.cs" />
+        <EmbeddedResource Include="Form1.resx">
+          <DependentUpon>Form1.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>

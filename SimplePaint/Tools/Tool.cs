@@ -8,7 +8,14 @@ namespace SimplePaint.Tools
 		public static Color BackColor;
 		public static int PenWidth;
 		public Point StartPoint;
+		public static Point MouseDownPoint;
+
+		// public Pen Pen
+		// {
+		// 	get => _pen;
+		// 	set => 
+		// }
 		
-		public abstract void Action(Graphics gr, Point endPoint, bool isFill);
+		public abstract void Draw(Graphics gr, Point endPoint, bool isFill);
 	}
 }

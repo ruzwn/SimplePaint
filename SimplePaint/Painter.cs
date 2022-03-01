@@ -6,25 +6,13 @@ namespace SimplePaint
 {
 	public class Painter
 	{
+		
 		Bitmap _image;
 		Dictionary<ToolType, Tool> _tools;
+		ToolType _currentToolType;
+		Tool _currentTool;
 		bool _isFill;
 
-		public enum ToolType
-		{
-			Pencil,
-			Eraser,
-			Pipette,
-			Text,
-			Fill,
-			Line,
-			Oval,
-			Rectangle,
-			Arrow,
-			Triangle
-		}
-
-		ToolType _currentToolType;
 		public ToolType CurrentToolType
 		{
 			get => _currentToolType;
@@ -40,22 +28,18 @@ namespace SimplePaint
 			get => _image;
 			set => _image = value;
 		}
-		
-		Tool _currentTool;
 
 		public Size ImageSize
 		{
-			get => _image.Size;
 			set
 			{
 				if (value.Width <= 0 || value.Height <= 0)
 					return;
+				
 				var img = new Bitmap(value.Width, value.Height);
 				var imgGr = Graphics.FromImage(img);
 				
-				// gets image with black background when try to save image (if clear button not clicked)
 				imgGr.Clear(Color.White);
-				
 				imgGr.DrawImage(_image, 0, 0);
 				_image = img;
 			}
@@ -65,8 +49,6 @@ namespace SimplePaint
 		{
 			InitializeTools();
 			_image = new Bitmap(size.Width, size.Height);
-			
-			// gets image with black background when try to save image (if clear button not clicked)
 			var imgGr = Graphics.FromImage(_image);
 			imgGr.Clear(Color.White);
 		}
@@ -78,9 +60,12 @@ namespace SimplePaint
 				{ToolType.Pencil, new Pencil()},
 				{ToolType.Eraser, new Eraser()},
 				{ToolType.Pipette, new Pipette()},
+				{ToolType.Text, new Text()},
 				{ToolType.Line, new Line()},
+				{ToolType.Oval, new Oval()},
 				{ToolType.Rectangle, new MyRectangle()},
-				//...
+				{ToolType.Arrow, new Arrow()},
+				{ToolType.Triangle, new Triangle()}
 			};
 			_currentToolType = ToolType.Pencil;
 			_currentTool = _tools[_currentToolType];
@@ -108,7 +93,7 @@ namespace SimplePaint
 
 		void Draw(Graphics gr, Point endPoint)
 		{
-			_currentTool.Action(gr, endPoint, _isFill);
+			_currentTool.Draw(gr, endPoint, _isFill);
 		}
 
 		public void Preview(Graphics gr, Point endPoint)

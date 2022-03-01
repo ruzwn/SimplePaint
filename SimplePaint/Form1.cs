@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using SimplePaint.Tools;
 
@@ -20,24 +19,24 @@ namespace SimplePaint
 
 		readonly Painter _painter;
 
-		bool _foreColorButtonClickedLast = true;
-
+		bool _backColorButtonClickedLast;
+		
 		bool _mousePressed;
 
 		private void foreColorButton_Click(object sender, EventArgs e)
 		{
-			_foreColorButtonClickedLast = true;
+			_backColorButtonClickedLast = true;
 		}
 
 		private void backColorButton_Click(object sender, EventArgs e)
 		{
-			_foreColorButtonClickedLast = false;
+			_backColorButtonClickedLast = false;
 		}
 
 		private void blackButton_Click(object sender, EventArgs e)
 		{
 			var button = (Button) sender;
-			if (_foreColorButtonClickedLast)
+			if (_backColorButtonClickedLast)
 				foreColorButton.BackColor = button.BackColor;
 			else
 				backColorButton.BackColor = button.BackColor;
@@ -47,7 +46,7 @@ namespace SimplePaint
 		{
 			var colorDialog = new ColorDialog();
 			colorDialog.ShowDialog();
-			if (_foreColorButtonClickedLast)
+			if (_backColorButtonClickedLast)
 				foreColorButton.BackColor = colorDialog.Color;
 			else
 				backColorButton.BackColor = colorDialog.Color;
@@ -55,52 +54,52 @@ namespace SimplePaint
 
 		private void pencilButton_Click(object sender, EventArgs e)
 		{
-			_painter.CurrentToolType = Painter.ToolType.Pencil;
+			_painter.CurrentToolType = ToolType.Pencil;
 		}
 
 		private void eraserButton_Click(object sender, EventArgs e)
 		{
-			_painter.CurrentToolType = Painter.ToolType.Eraser;
+			_painter.CurrentToolType = ToolType.Eraser;
 		}
 
 		private void pipetteButton_Click(object sender, EventArgs e)
 		{
-			_painter.CurrentToolType = Painter.ToolType.Pipette;
+			_painter.CurrentToolType = ToolType.Pipette;
 		}
 
 		private void textButton_Click(object sender, EventArgs e)
 		{
-
+			_painter.CurrentToolType = ToolType.Text;
 		}
 
 		private void fillButton_Click(object sender, EventArgs e)
 		{
-
+			
 		}
 
 		private void lineButton_Click(object sender, EventArgs e)
 		{
-			_painter.CurrentToolType = Painter.ToolType.Line;
+			_painter.CurrentToolType = ToolType.Line;
 		}
 
 		private void ovalButton_Click(object sender, EventArgs e)
 		{
-
+			_painter.CurrentToolType = ToolType.Oval;
 		}
 
 		private void rectangleButton_Click(object sender, EventArgs e)
 		{
-			_painter.CurrentToolType = Painter.ToolType.Rectangle;
+			_painter.CurrentToolType = ToolType.Rectangle;
 		}
 
 		private void arrowButton_Click(object sender, EventArgs e)
 		{
-
+			_painter.CurrentToolType = ToolType.Arrow;
 		}
 
 		private void triangleButton_Click(object sender, EventArgs e)
 		{
-
+			_painter.CurrentToolType = ToolType.Triangle;
 		}
 
 		private void penWidthButton_ValueChanged(object sender, EventArgs e)
@@ -148,6 +147,7 @@ namespace SimplePaint
 		private void canvasPanel_MouseDown(object sender, MouseEventArgs e)
 		{
 			_mousePressed = true;
+			Tool.MouseDownPoint = e.Location;
 			switch (e.Button)
 			{
 				case MouseButtons.Left:
@@ -162,9 +162,12 @@ namespace SimplePaint
 		private void canvasPanel_MouseUp(object sender, MouseEventArgs e)
 		{
 			_mousePressed = false;
-			if (_painter.CurrentToolType == Painter.ToolType.Pipette)
+			//Tool.MouseDownPoint = Point.Empty;
+			if (_painter.CurrentToolType == ToolType.Pipette)
 				foreColorButton.BackColor = _painter.DrawEnd(e.Location);
-			_painter.DrawEnd(e.Location);
+			else
+				_painter.DrawEnd(e.Location);
+			//canvasPanel.Update();
 		}
 
 		private void canvasPanel_MouseMove(object sender, MouseEventArgs e)
@@ -180,9 +183,8 @@ namespace SimplePaint
 
 		private void canvasPanel_Resize(object sender, EventArgs e)
 		{
-			if (_painter == null)
-				return;
-			_painter.ImageSize = canvasPanel.ClientSize;
+			if (_painter != null)
+				_painter.ImageSize = canvasPanel.ClientSize;
 		}
 
 		private void clearCanvasButton_Click(object sender, EventArgs e)

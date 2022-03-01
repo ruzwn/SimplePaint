@@ -27,8 +27,8 @@ namespace SimplePaint
 		#region Windows Form Designer generated code
 
 		/// <summary>
-		///  Required method for Designer support - do not modify
-		///  the contents of this method with the code editor.
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent()
 		{
@@ -83,19 +83,17 @@ namespace SimplePaint
 			// tableLayoutPanel1
 			// 
 			this.tableLayoutPanel1.ColumnCount = 2;
-			this.tableLayoutPanel1.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-			this.tableLayoutPanel1.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
 			this.tableLayoutPanel1.Controls.Add(this.canvasPanel, 0, 0);
 			this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
 			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+			this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
 			this.tableLayoutPanel1.RowCount = 1;
-			this.tableLayoutPanel1.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(1082, 622);
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(1082, 498);
 			this.tableLayoutPanel1.TabIndex = 0;
 			// 
 			// canvasPanel
@@ -104,9 +102,10 @@ namespace SimplePaint
 			this.canvasPanel.BackColor = System.Drawing.Color.White;
 			this.canvasPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.canvasPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.canvasPanel.Location = new System.Drawing.Point(3, 3);
+			this.canvasPanel.Location = new System.Drawing.Point(3, 2);
+			this.canvasPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.canvasPanel.Name = "canvasPanel";
-			this.canvasPanel.Size = new System.Drawing.Size(805, 616);
+			this.canvasPanel.Size = new System.Drawing.Size(805, 494);
 			this.canvasPanel.TabIndex = 0;
 			this.canvasPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.canvasPanel_Paint);
 			this.canvasPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canvasPanel_MouseDown);
@@ -118,40 +117,31 @@ namespace SimplePaint
 			// 
 			this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
 			this.tableLayoutPanel2.ColumnCount = 1;
-			this.tableLayoutPanel2.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
 			this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 1);
 			this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 0, 2);
 			this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 0, 3);
 			this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel2.Location = new System.Drawing.Point(814, 3);
+			this.tableLayoutPanel2.Location = new System.Drawing.Point(814, 2);
+			this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
 			this.tableLayoutPanel2.RowCount = 5;
-			this.tableLayoutPanel2.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel2.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-			this.tableLayoutPanel2.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-			this.tableLayoutPanel2.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel2.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-			this.tableLayoutPanel2.Size = new System.Drawing.Size(265, 616);
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+			this.tableLayoutPanel2.Size = new System.Drawing.Size(265, 494);
 			this.tableLayoutPanel2.TabIndex = 1;
 			// 
 			// tableLayoutPanel3
 			// 
 			this.tableLayoutPanel3.ColumnCount = 4;
-			this.tableLayoutPanel3.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-			this.tableLayoutPanel3.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-			this.tableLayoutPanel3.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-			this.tableLayoutPanel3.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
 			this.tableLayoutPanel3.Controls.Add(this.backColorButton, 2, 4);
 			this.tableLayoutPanel3.Controls.Add(this.foreColorButton, 0, 4);
 			this.tableLayoutPanel3.Controls.Add(this.colorDialogButton, 3, 3);
@@ -171,20 +161,16 @@ namespace SimplePaint
 			this.tableLayoutPanel3.Controls.Add(this.grayButton, 1, 0);
 			this.tableLayoutPanel3.Controls.Add(this.blackButton, 0, 0);
 			this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 4);
+			this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 3);
+			this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
 			this.tableLayoutPanel3.RowCount = 5;
-			this.tableLayoutPanel3.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel3.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel3.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel3.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel3.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel3.Size = new System.Drawing.Size(257, 116);
+			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.Size = new System.Drawing.Size(257, 93);
 			this.tableLayoutPanel3.TabIndex = 0;
 			// 
 			// backColorButton
@@ -192,9 +178,10 @@ namespace SimplePaint
 			this.backColorButton.BackColor = System.Drawing.Color.White;
 			this.tableLayoutPanel3.SetColumnSpan(this.backColorButton, 2);
 			this.backColorButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.backColorButton.Location = new System.Drawing.Point(131, 95);
+			this.backColorButton.Location = new System.Drawing.Point(131, 74);
+			this.backColorButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.backColorButton.Name = "backColorButton";
-			this.backColorButton.Size = new System.Drawing.Size(123, 18);
+			this.backColorButton.Size = new System.Drawing.Size(123, 17);
 			this.backColorButton.TabIndex = 17;
 			this.backColorButton.UseVisualStyleBackColor = false;
 			this.backColorButton.BackColorChanged += new System.EventHandler(this.backColorButton_BackColorChanged);
@@ -205,9 +192,10 @@ namespace SimplePaint
 			this.foreColorButton.BackColor = System.Drawing.Color.Black;
 			this.tableLayoutPanel3.SetColumnSpan(this.foreColorButton, 2);
 			this.foreColorButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.foreColorButton.Location = new System.Drawing.Point(3, 95);
+			this.foreColorButton.Location = new System.Drawing.Point(3, 74);
+			this.foreColorButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.foreColorButton.Name = "foreColorButton";
-			this.foreColorButton.Size = new System.Drawing.Size(122, 18);
+			this.foreColorButton.Size = new System.Drawing.Size(122, 17);
 			this.foreColorButton.TabIndex = 16;
 			this.foreColorButton.UseVisualStyleBackColor = false;
 			this.foreColorButton.BackColorChanged += new System.EventHandler(this.foreColorButton_BackColorChanged);
@@ -216,11 +204,11 @@ namespace SimplePaint
 			// colorDialogButton
 			// 
 			this.colorDialogButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.colorDialogButton.Font = new System.Drawing.Font("Showcard Gothic", 9F,
-				System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.colorDialogButton.Location = new System.Drawing.Point(195, 72);
+			this.colorDialogButton.Font = new System.Drawing.Font("Showcard Gothic", 9F);
+			this.colorDialogButton.Location = new System.Drawing.Point(195, 56);
+			this.colorDialogButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.colorDialogButton.Name = "colorDialogButton";
-			this.colorDialogButton.Size = new System.Drawing.Size(59, 17);
+			this.colorDialogButton.Size = new System.Drawing.Size(59, 14);
 			this.colorDialogButton.TabIndex = 15;
 			this.colorDialogButton.Text = "...";
 			this.colorDialogButton.UseVisualStyleBackColor = true;
@@ -230,9 +218,10 @@ namespace SimplePaint
 			// 
 			this.pinkButton.BackColor = System.Drawing.Color.Pink;
 			this.pinkButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pinkButton.Location = new System.Drawing.Point(131, 72);
+			this.pinkButton.Location = new System.Drawing.Point(131, 56);
+			this.pinkButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.pinkButton.Name = "pinkButton";
-			this.pinkButton.Size = new System.Drawing.Size(58, 17);
+			this.pinkButton.Size = new System.Drawing.Size(58, 14);
 			this.pinkButton.TabIndex = 14;
 			this.pinkButton.UseVisualStyleBackColor = false;
 			this.pinkButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -241,9 +230,10 @@ namespace SimplePaint
 			// 
 			this.fuchsiaButton.BackColor = System.Drawing.Color.Fuchsia;
 			this.fuchsiaButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.fuchsiaButton.Location = new System.Drawing.Point(67, 72);
+			this.fuchsiaButton.Location = new System.Drawing.Point(67, 56);
+			this.fuchsiaButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.fuchsiaButton.Name = "fuchsiaButton";
-			this.fuchsiaButton.Size = new System.Drawing.Size(58, 17);
+			this.fuchsiaButton.Size = new System.Drawing.Size(58, 14);
 			this.fuchsiaButton.TabIndex = 13;
 			this.fuchsiaButton.UseVisualStyleBackColor = false;
 			this.fuchsiaButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -252,9 +242,10 @@ namespace SimplePaint
 			// 
 			this.plumButton.BackColor = System.Drawing.Color.Plum;
 			this.plumButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plumButton.Location = new System.Drawing.Point(3, 72);
+			this.plumButton.Location = new System.Drawing.Point(3, 56);
+			this.plumButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.plumButton.Name = "plumButton";
-			this.plumButton.Size = new System.Drawing.Size(58, 17);
+			this.plumButton.Size = new System.Drawing.Size(58, 14);
 			this.plumButton.TabIndex = 12;
 			this.plumButton.UseVisualStyleBackColor = false;
 			this.plumButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -263,9 +254,10 @@ namespace SimplePaint
 			// 
 			this.indigoButton.BackColor = System.Drawing.Color.Indigo;
 			this.indigoButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.indigoButton.Location = new System.Drawing.Point(195, 49);
+			this.indigoButton.Location = new System.Drawing.Point(195, 38);
+			this.indigoButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.indigoButton.Name = "indigoButton";
-			this.indigoButton.Size = new System.Drawing.Size(59, 17);
+			this.indigoButton.Size = new System.Drawing.Size(59, 14);
 			this.indigoButton.TabIndex = 11;
 			this.indigoButton.UseVisualStyleBackColor = false;
 			this.indigoButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -274,9 +266,10 @@ namespace SimplePaint
 			// 
 			this.blueButton.BackColor = System.Drawing.Color.Blue;
 			this.blueButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.blueButton.Location = new System.Drawing.Point(131, 49);
+			this.blueButton.Location = new System.Drawing.Point(131, 38);
+			this.blueButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.blueButton.Name = "blueButton";
-			this.blueButton.Size = new System.Drawing.Size(58, 17);
+			this.blueButton.Size = new System.Drawing.Size(58, 14);
 			this.blueButton.TabIndex = 10;
 			this.blueButton.UseVisualStyleBackColor = false;
 			this.blueButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -285,9 +278,10 @@ namespace SimplePaint
 			// 
 			this.deepSkyBlutButton.BackColor = System.Drawing.Color.DeepSkyBlue;
 			this.deepSkyBlutButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.deepSkyBlutButton.Location = new System.Drawing.Point(67, 49);
+			this.deepSkyBlutButton.Location = new System.Drawing.Point(67, 38);
+			this.deepSkyBlutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.deepSkyBlutButton.Name = "deepSkyBlutButton";
-			this.deepSkyBlutButton.Size = new System.Drawing.Size(58, 17);
+			this.deepSkyBlutButton.Size = new System.Drawing.Size(58, 14);
 			this.deepSkyBlutButton.TabIndex = 9;
 			this.deepSkyBlutButton.UseVisualStyleBackColor = false;
 			this.deepSkyBlutButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -296,9 +290,10 @@ namespace SimplePaint
 			// 
 			this.aquaButton.BackColor = System.Drawing.Color.Aqua;
 			this.aquaButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.aquaButton.Location = new System.Drawing.Point(3, 49);
+			this.aquaButton.Location = new System.Drawing.Point(3, 38);
+			this.aquaButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.aquaButton.Name = "aquaButton";
-			this.aquaButton.Size = new System.Drawing.Size(58, 17);
+			this.aquaButton.Size = new System.Drawing.Size(58, 14);
 			this.aquaButton.TabIndex = 8;
 			this.aquaButton.UseVisualStyleBackColor = false;
 			this.aquaButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -307,9 +302,10 @@ namespace SimplePaint
 			// 
 			this.greenButton.BackColor = System.Drawing.Color.Green;
 			this.greenButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.greenButton.Location = new System.Drawing.Point(195, 26);
+			this.greenButton.Location = new System.Drawing.Point(195, 20);
+			this.greenButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.greenButton.Name = "greenButton";
-			this.greenButton.Size = new System.Drawing.Size(59, 17);
+			this.greenButton.Size = new System.Drawing.Size(59, 14);
 			this.greenButton.TabIndex = 7;
 			this.greenButton.UseVisualStyleBackColor = false;
 			this.greenButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -318,9 +314,10 @@ namespace SimplePaint
 			// 
 			this.khakiButton.BackColor = System.Drawing.Color.Khaki;
 			this.khakiButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.khakiButton.Location = new System.Drawing.Point(131, 26);
+			this.khakiButton.Location = new System.Drawing.Point(131, 20);
+			this.khakiButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.khakiButton.Name = "khakiButton";
-			this.khakiButton.Size = new System.Drawing.Size(58, 17);
+			this.khakiButton.Size = new System.Drawing.Size(58, 14);
 			this.khakiButton.TabIndex = 6;
 			this.khakiButton.UseVisualStyleBackColor = false;
 			this.khakiButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -329,9 +326,10 @@ namespace SimplePaint
 			// 
 			this.yellowButton.BackColor = System.Drawing.Color.Yellow;
 			this.yellowButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.yellowButton.Location = new System.Drawing.Point(67, 26);
+			this.yellowButton.Location = new System.Drawing.Point(67, 20);
+			this.yellowButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.yellowButton.Name = "yellowButton";
-			this.yellowButton.Size = new System.Drawing.Size(58, 17);
+			this.yellowButton.Size = new System.Drawing.Size(58, 14);
 			this.yellowButton.TabIndex = 5;
 			this.yellowButton.UseVisualStyleBackColor = false;
 			this.yellowButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -340,9 +338,10 @@ namespace SimplePaint
 			// 
 			this.orangeButton.BackColor = System.Drawing.Color.Orange;
 			this.orangeButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.orangeButton.Location = new System.Drawing.Point(3, 26);
+			this.orangeButton.Location = new System.Drawing.Point(3, 20);
+			this.orangeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.orangeButton.Name = "orangeButton";
-			this.orangeButton.Size = new System.Drawing.Size(58, 17);
+			this.orangeButton.Size = new System.Drawing.Size(58, 14);
 			this.orangeButton.TabIndex = 4;
 			this.orangeButton.UseVisualStyleBackColor = false;
 			this.orangeButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -351,9 +350,10 @@ namespace SimplePaint
 			// 
 			this.redButton.BackColor = System.Drawing.Color.Red;
 			this.redButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.redButton.Location = new System.Drawing.Point(195, 3);
+			this.redButton.Location = new System.Drawing.Point(195, 2);
+			this.redButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.redButton.Name = "redButton";
-			this.redButton.Size = new System.Drawing.Size(59, 17);
+			this.redButton.Size = new System.Drawing.Size(59, 14);
 			this.redButton.TabIndex = 3;
 			this.redButton.UseVisualStyleBackColor = false;
 			this.redButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -362,9 +362,10 @@ namespace SimplePaint
 			// 
 			this.whiteButton.BackColor = System.Drawing.Color.White;
 			this.whiteButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.whiteButton.Location = new System.Drawing.Point(131, 3);
+			this.whiteButton.Location = new System.Drawing.Point(131, 2);
+			this.whiteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.whiteButton.Name = "whiteButton";
-			this.whiteButton.Size = new System.Drawing.Size(58, 17);
+			this.whiteButton.Size = new System.Drawing.Size(58, 14);
 			this.whiteButton.TabIndex = 2;
 			this.whiteButton.UseVisualStyleBackColor = false;
 			this.whiteButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -373,9 +374,10 @@ namespace SimplePaint
 			// 
 			this.grayButton.BackColor = System.Drawing.Color.Gray;
 			this.grayButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.grayButton.Location = new System.Drawing.Point(67, 3);
+			this.grayButton.Location = new System.Drawing.Point(67, 2);
+			this.grayButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.grayButton.Name = "grayButton";
-			this.grayButton.Size = new System.Drawing.Size(58, 17);
+			this.grayButton.Size = new System.Drawing.Size(58, 14);
 			this.grayButton.TabIndex = 1;
 			this.grayButton.UseVisualStyleBackColor = false;
 			this.grayButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -385,9 +387,10 @@ namespace SimplePaint
 			this.blackButton.BackColor = System.Drawing.Color.Black;
 			this.blackButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.blackButton.ForeColor = System.Drawing.Color.Black;
-			this.blackButton.Location = new System.Drawing.Point(3, 3);
+			this.blackButton.Location = new System.Drawing.Point(3, 2);
+			this.blackButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.blackButton.Name = "blackButton";
-			this.blackButton.Size = new System.Drawing.Size(58, 17);
+			this.blackButton.Size = new System.Drawing.Size(58, 14);
 			this.blackButton.TabIndex = 0;
 			this.blackButton.UseVisualStyleBackColor = false;
 			this.blackButton.Click += new System.EventHandler(this.blackButton_Click);
@@ -395,36 +398,32 @@ namespace SimplePaint
 			// tableLayoutPanel4
 			// 
 			this.tableLayoutPanel4.ColumnCount = 5;
-			this.tableLayoutPanel4.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel4.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel4.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel4.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel4.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
 			this.tableLayoutPanel4.Controls.Add(this.fillButton, 4, 0);
 			this.tableLayoutPanel4.Controls.Add(this.textButton, 3, 0);
 			this.tableLayoutPanel4.Controls.Add(this.pipetteButton, 2, 0);
 			this.tableLayoutPanel4.Controls.Add(this.eraserButton, 1, 0);
 			this.tableLayoutPanel4.Controls.Add(this.pencilButton, 0, 0);
 			this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 127);
+			this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 101);
+			this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
 			this.tableLayoutPanel4.RowCount = 1;
-			this.tableLayoutPanel4.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel4.Size = new System.Drawing.Size(257, 55);
+			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel4.Size = new System.Drawing.Size(257, 44);
 			this.tableLayoutPanel4.TabIndex = 1;
 			// 
 			// fillButton
 			// 
 			this.fillButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.fillButton.Location = new System.Drawing.Point(207, 3);
+			this.fillButton.Location = new System.Drawing.Point(207, 2);
+			this.fillButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.fillButton.Name = "fillButton";
-			this.fillButton.Size = new System.Drawing.Size(47, 49);
+			this.fillButton.Size = new System.Drawing.Size(47, 40);
 			this.fillButton.TabIndex = 4;
 			this.fillButton.Text = "Fill";
 			this.fillButton.UseVisualStyleBackColor = true;
@@ -433,9 +432,10 @@ namespace SimplePaint
 			// textButton
 			// 
 			this.textButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textButton.Location = new System.Drawing.Point(156, 3);
+			this.textButton.Location = new System.Drawing.Point(156, 2);
+			this.textButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.textButton.Name = "textButton";
-			this.textButton.Size = new System.Drawing.Size(45, 49);
+			this.textButton.Size = new System.Drawing.Size(45, 40);
 			this.textButton.TabIndex = 3;
 			this.textButton.Text = "Text";
 			this.textButton.UseVisualStyleBackColor = true;
@@ -444,9 +444,10 @@ namespace SimplePaint
 			// pipetteButton
 			// 
 			this.pipetteButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pipetteButton.Location = new System.Drawing.Point(105, 3);
+			this.pipetteButton.Location = new System.Drawing.Point(105, 2);
+			this.pipetteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.pipetteButton.Name = "pipetteButton";
-			this.pipetteButton.Size = new System.Drawing.Size(45, 49);
+			this.pipetteButton.Size = new System.Drawing.Size(45, 40);
 			this.pipetteButton.TabIndex = 2;
 			this.pipetteButton.Text = "Pipette";
 			this.pipetteButton.UseVisualStyleBackColor = true;
@@ -455,9 +456,10 @@ namespace SimplePaint
 			// eraserButton
 			// 
 			this.eraserButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.eraserButton.Location = new System.Drawing.Point(54, 3);
+			this.eraserButton.Location = new System.Drawing.Point(54, 2);
+			this.eraserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.eraserButton.Name = "eraserButton";
-			this.eraserButton.Size = new System.Drawing.Size(45, 49);
+			this.eraserButton.Size = new System.Drawing.Size(45, 40);
 			this.eraserButton.TabIndex = 1;
 			this.eraserButton.Text = "Eraser";
 			this.eraserButton.UseVisualStyleBackColor = true;
@@ -466,9 +468,10 @@ namespace SimplePaint
 			// pencilButton
 			// 
 			this.pencilButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pencilButton.Location = new System.Drawing.Point(3, 3);
+			this.pencilButton.Location = new System.Drawing.Point(3, 2);
+			this.pencilButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.pencilButton.Name = "pencilButton";
-			this.pencilButton.Size = new System.Drawing.Size(45, 49);
+			this.pencilButton.Size = new System.Drawing.Size(45, 40);
 			this.pencilButton.TabIndex = 0;
 			this.pencilButton.Text = "Pencil";
 			this.pencilButton.UseVisualStyleBackColor = true;
@@ -477,36 +480,32 @@ namespace SimplePaint
 			// tableLayoutPanel5
 			// 
 			this.tableLayoutPanel5.ColumnCount = 5;
-			this.tableLayoutPanel5.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel5.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel5.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel5.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel5.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
 			this.tableLayoutPanel5.Controls.Add(this.triangleButton, 4, 0);
 			this.tableLayoutPanel5.Controls.Add(this.arrowButton, 3, 0);
 			this.tableLayoutPanel5.Controls.Add(this.rectangleButton, 2, 0);
 			this.tableLayoutPanel5.Controls.Add(this.ovalButton, 1, 0);
 			this.tableLayoutPanel5.Controls.Add(this.lineButton, 0, 0);
 			this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 189);
+			this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 150);
+			this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.tableLayoutPanel5.Name = "tableLayoutPanel5";
 			this.tableLayoutPanel5.RowCount = 1;
-			this.tableLayoutPanel5.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel5.Size = new System.Drawing.Size(257, 55);
+			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel5.Size = new System.Drawing.Size(257, 44);
 			this.tableLayoutPanel5.TabIndex = 2;
 			// 
 			// triangleButton
 			// 
 			this.triangleButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.triangleButton.Location = new System.Drawing.Point(207, 3);
+			this.triangleButton.Location = new System.Drawing.Point(207, 2);
+			this.triangleButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.triangleButton.Name = "triangleButton";
-			this.triangleButton.Size = new System.Drawing.Size(47, 49);
+			this.triangleButton.Size = new System.Drawing.Size(47, 40);
 			this.triangleButton.TabIndex = 4;
 			this.triangleButton.Text = "Triangle";
 			this.triangleButton.UseVisualStyleBackColor = true;
@@ -515,9 +514,10 @@ namespace SimplePaint
 			// arrowButton
 			// 
 			this.arrowButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.arrowButton.Location = new System.Drawing.Point(156, 3);
+			this.arrowButton.Location = new System.Drawing.Point(156, 2);
+			this.arrowButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.arrowButton.Name = "arrowButton";
-			this.arrowButton.Size = new System.Drawing.Size(45, 49);
+			this.arrowButton.Size = new System.Drawing.Size(45, 40);
 			this.arrowButton.TabIndex = 3;
 			this.arrowButton.Text = "Arrow";
 			this.arrowButton.UseVisualStyleBackColor = true;
@@ -526,9 +526,10 @@ namespace SimplePaint
 			// rectangleButton
 			// 
 			this.rectangleButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.rectangleButton.Location = new System.Drawing.Point(105, 3);
+			this.rectangleButton.Location = new System.Drawing.Point(105, 2);
+			this.rectangleButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.rectangleButton.Name = "rectangleButton";
-			this.rectangleButton.Size = new System.Drawing.Size(45, 49);
+			this.rectangleButton.Size = new System.Drawing.Size(45, 40);
 			this.rectangleButton.TabIndex = 2;
 			this.rectangleButton.Text = "Rectangle";
 			this.rectangleButton.UseVisualStyleBackColor = true;
@@ -537,9 +538,10 @@ namespace SimplePaint
 			// ovalButton
 			// 
 			this.ovalButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ovalButton.Location = new System.Drawing.Point(54, 3);
+			this.ovalButton.Location = new System.Drawing.Point(54, 2);
+			this.ovalButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.ovalButton.Name = "ovalButton";
-			this.ovalButton.Size = new System.Drawing.Size(45, 49);
+			this.ovalButton.Size = new System.Drawing.Size(45, 40);
 			this.ovalButton.TabIndex = 1;
 			this.ovalButton.Text = "Oval";
 			this.ovalButton.UseVisualStyleBackColor = true;
@@ -548,9 +550,10 @@ namespace SimplePaint
 			// lineButton
 			// 
 			this.lineButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.lineButton.Location = new System.Drawing.Point(3, 3);
+			this.lineButton.Location = new System.Drawing.Point(3, 2);
+			this.lineButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.lineButton.Name = "lineButton";
-			this.lineButton.Size = new System.Drawing.Size(45, 49);
+			this.lineButton.Size = new System.Drawing.Size(45, 40);
 			this.lineButton.TabIndex = 0;
 			this.lineButton.Text = "Line";
 			this.lineButton.UseVisualStyleBackColor = true;
@@ -559,31 +562,29 @@ namespace SimplePaint
 			// tableLayoutPanel6
 			// 
 			this.tableLayoutPanel6.ColumnCount = 2;
-			this.tableLayoutPanel6.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel6.ColumnStyles.Add(
-				new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel6.Controls.Add(this.clearCanvasButton, 1, 0);
 			this.tableLayoutPanel6.Controls.Add(this.openButton, 1, 1);
 			this.tableLayoutPanel6.Controls.Add(this.penWidthButton, 0, 0);
 			this.tableLayoutPanel6.Controls.Add(this.saveAsButton, 0, 1);
 			this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 251);
+			this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 199);
+			this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.tableLayoutPanel6.Name = "tableLayoutPanel6";
 			this.tableLayoutPanel6.RowCount = 2;
-			this.tableLayoutPanel6.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel6.RowStyles.Add(
-				new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel6.Size = new System.Drawing.Size(257, 116);
+			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel6.Size = new System.Drawing.Size(257, 93);
 			this.tableLayoutPanel6.TabIndex = 3;
 			// 
 			// clearCanvasButton
 			// 
 			this.clearCanvasButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.clearCanvasButton.Location = new System.Drawing.Point(131, 3);
+			this.clearCanvasButton.Location = new System.Drawing.Point(131, 2);
+			this.clearCanvasButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.clearCanvasButton.Name = "clearCanvasButton";
-			this.clearCanvasButton.Size = new System.Drawing.Size(123, 52);
+			this.clearCanvasButton.Size = new System.Drawing.Size(123, 42);
 			this.clearCanvasButton.TabIndex = 0;
 			this.clearCanvasButton.Text = "Clear";
 			this.clearCanvasButton.UseVisualStyleBackColor = true;
@@ -592,9 +593,10 @@ namespace SimplePaint
 			// openButton
 			// 
 			this.openButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.openButton.Location = new System.Drawing.Point(131, 61);
+			this.openButton.Location = new System.Drawing.Point(131, 48);
+			this.openButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.openButton.Name = "openButton";
-			this.openButton.Size = new System.Drawing.Size(123, 52);
+			this.openButton.Size = new System.Drawing.Size(123, 43);
 			this.openButton.TabIndex = 3;
 			this.openButton.Text = "Open";
 			this.openButton.UseVisualStyleBackColor = true;
@@ -604,47 +606,25 @@ namespace SimplePaint
 			// 
 			this.penWidthButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.penWidthButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.penWidthButton.Increment = new decimal(new int[]
-			{
-				3,
-				0,
-				0,
-				0
-			});
-			this.penWidthButton.Location = new System.Drawing.Point(3, 3);
-			this.penWidthButton.Maximum = new decimal(new int[]
-			{
-				19,
-				0,
-				0,
-				0
-			});
-			this.penWidthButton.Minimum = new decimal(new int[]
-			{
-				1,
-				0,
-				0,
-				0
-			});
+			this.penWidthButton.Increment = new decimal(new int[] {3, 0, 0, 0});
+			this.penWidthButton.Location = new System.Drawing.Point(3, 2);
+			this.penWidthButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.penWidthButton.Maximum = new decimal(new int[] {19, 0, 0, 0});
+			this.penWidthButton.Minimum = new decimal(new int[] {1, 0, 0, 0});
 			this.penWidthButton.Name = "penWidthButton";
 			this.penWidthButton.ReadOnly = true;
-			this.penWidthButton.Size = new System.Drawing.Size(122, 27);
+			this.penWidthButton.Size = new System.Drawing.Size(122, 22);
 			this.penWidthButton.TabIndex = 0;
-			this.penWidthButton.Value = new decimal(new int[]
-			{
-				1,
-				0,
-				0,
-				0
-			});
+			this.penWidthButton.Value = new decimal(new int[] {4, 0, 0, 0});
 			this.penWidthButton.ValueChanged += new System.EventHandler(this.penWidthButton_ValueChanged);
 			// 
 			// saveAsButton
 			// 
 			this.saveAsButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.saveAsButton.Location = new System.Drawing.Point(3, 61);
+			this.saveAsButton.Location = new System.Drawing.Point(3, 48);
+			this.saveAsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.saveAsButton.Name = "saveAsButton";
-			this.saveAsButton.Size = new System.Drawing.Size(122, 52);
+			this.saveAsButton.Size = new System.Drawing.Size(122, 43);
 			this.saveAsButton.TabIndex = 1;
 			this.saveAsButton.Text = "Save As";
 			this.saveAsButton.UseVisualStyleBackColor = true;
@@ -652,10 +632,11 @@ namespace SimplePaint
 			// 
 			// Form1
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1082, 622);
+			this.ClientSize = new System.Drawing.Size(1082, 498);
 			this.Controls.Add(this.tableLayoutPanel1);
+			this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.tableLayoutPanel1.ResumeLayout(false);
@@ -666,13 +647,12 @@ namespace SimplePaint
 			this.tableLayoutPanel6.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize) (this.penWidthButton)).EndInit();
 			this.ResumeLayout(false);
-
 		}
 
 		#endregion
 
 		private TableLayoutPanel tableLayoutPanel1;
-		private Panel canvasPanel;
+		private System.Windows.Forms.Panel canvasPanel;
 		private TableLayoutPanel tableLayoutPanel2;
 		private TableLayoutPanel tableLayoutPanel3;
 		private Button backColorButton;
@@ -706,7 +686,7 @@ namespace SimplePaint
 		private Button ovalButton;
 		private Button lineButton;
 		private TableLayoutPanel tableLayoutPanel6;
-		private NumericUpDown penWidthButton;
+		private System.Windows.Forms.NumericUpDown penWidthButton;
 		private Button openButton;
 		private Button saveAsButton;
 		private Button clearCanvasButton;
